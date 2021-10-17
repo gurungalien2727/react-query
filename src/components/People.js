@@ -12,7 +12,7 @@ const People = () => {
     return <>
     <p>People component</p>
     {status === 'loading' && (
-        <div>Loading data</div>
+        <div>Loading</div>
     )
     }
     {status === 'error' && (
