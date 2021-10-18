@@ -1,6 +1,6 @@
 import React from 'react';
-import People from './People';
-import Planet  from './Planet';
+import Peoples from './Peoples';
+import Planets  from './Planets';
 
 const Navbar = ({setPage}) => {
  

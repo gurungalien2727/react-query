@@ -6,7 +6,7 @@ const fetchPeoples = async () =>{
     return res.json();
 }
 
-const People = () => {
+const Peoples = () => {
     const {data, status} = useQuery('people', fetchPeoples);
     console.log(status);
     return <>
@@ -30,4 +30,4 @@ const People = () => {
 }
 
 
-export default People;
+export default Peoples;

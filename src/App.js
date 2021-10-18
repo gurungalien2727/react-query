@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Navbar from './components/Navbar';
-import People from './components/People';
-import Planet from './components/Planet';
+import Peoples from './components/Peoples';
+import Planets from './components/Planets';
 import { QueryClient, QueryClientProvider, useQuery } from 'react-query'
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
     <h3>App Component</h3>
     <Navbar setPage={setPage}/>
-    {page === 'people' ? <People/> : <Planet/>}
+    {page === 'people' ? <Peoples/> : <Planets/>}
     </QueryClientProvider>
     </>
    
