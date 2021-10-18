@@ -1,5 +1,6 @@
 import React from 'react';
 import {useQuery} from 'react-query';
+import {Person} from './Person';
 
 const fetchPeoples = async () =>{
     const res = await fetch('http://swapi.dev/api/people/');
@@ -22,7 +23,7 @@ const Peoples = () => {
      {status === 'success' && (
          
         <div>{
-            data.results.map(people => <p>{people.name}</p>)
+            data.results.map(person => <Person person={person}></Person>)
         }</div>
     )
     }
